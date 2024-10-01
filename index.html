@@ -56,6 +56,61 @@ for Your Business"
       </div>
     </header>
     <main>
+
+      <div class="generally"></div>
+      <div class="modal">
+        <svg id="close" viewBox="0 0 32 32" width="24px" height="24px">
+          <use href="/images/icons.svg#icon-close"></use>
+        </svg>
+
+        <h3 class="modal-title">
+          Leave your contacts and we will call you back
+        </h3>
+        <form class="modal-form">
+          <label for="name" class="items">Name</label>
+          <div class="svg-and-items">
+            <input type="text" id="name" name="name" />
+            <svg id="person-icon" viewBox="0 0 32 32">
+              <use href="/images/icons.svg#icon-person"></use>
+            </svg>
+          </div>
+          <label for="phone" class="items">Phone</label>
+          <div class="svg-and-items">
+            <input type="tel" id="tel" name="tel" />
+            <svg id="phone-icon" viewBox="0 0 32 28">
+              <use href="/images/icons.svg#icon-phone"></use>
+            </svg>
+          </div>
+          <label for="mail" class="items">Email</label>
+          <div class="svg-and-items">
+            <input type="email" id="email" name="email" autocomplete="off" />
+            <svg id="mail-icon" viewBox="0 0 43 32">
+              <use href="/images/icons.svg#icon-mail"></use>
+            </svg>
+          </div>
+          <label for="comment" class="items">Comment</label>
+          <div class="svg-and-items">
+            <textarea
+              name="comment"
+              id="comment"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+          <label for="checkbox-privacy" id="checkbox-privacy">
+            <input
+              type="checkbox"
+              id="checkbox-privacy"
+              name="checkbox-privacy"
+              value="yes"
+            />
+            I accept the terms and condiditions of the
+            <a href="#" class="privacy-modal"> Privacy Policy </a>
+          </label>
+          <button class="send-modal">Send</button>
+        </form>
+      </div>
+    </div>
+
       <section class="section-one">
         <div class="section-one-container container">
           <h1 class="section-one-header">
