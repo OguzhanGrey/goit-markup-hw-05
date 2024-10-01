@@ -582,6 +582,11 @@ body {
   background: #404bbf;
 }
 
+#icon-telegram {
+  align-items: center;
+  justify-content: end;
+}
+
 .modal {
   box-sizing: border-box;
   width: 438px;
@@ -604,6 +609,12 @@ body {
   top: 24px;
   right: 24px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --color3: none;
+}
+
+#close:hover {
+  --color2: #404bbf;
+  --color4: #ffffff;
 }
 
 .modal-title {
@@ -631,11 +642,17 @@ body {
   color: #8e8f99;
 }
 #name {
-  padding-left: 36px;
-  width: 360px;
+  padding-left: 40px;
+  width: 380px;
   height: 40px;
   border: 1px solid #2e2f4266;
   border-radius: 4px;
+  outline: none;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#name:focus-within {
+  border-color: #4d5ae5;
 }
 
 #person-icon {
@@ -644,35 +661,48 @@ body {
   left: 16px;
   width: 18px;
   height: 18px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 #tel {
-  padding-left: 36px;
-  width: 360px;
+  padding-left: 40px;
+  width: 380px;
   height: 40px;
   border: 1px solid #2e2f4266;
   border-radius: 4px;
+  outline: none;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#tel:focus-within {
+  border-color: #4d5ae5;
 }
 
 #phone-icon {
   position: absolute;
-  top: 88px;
+  top: 86px;
   left: 16px;
   width: 18px;
   height: 24px;
 }
 
 #email {
-  padding-left: 36px;
-  width: 360px;
+  padding-left: 40px;
+  width: 380px;
   height: 40px;
   border: 1px solid #2e2f4266;
   border-radius: 4px;
+  outline: none;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#email:focus-within {
+  border-color: #4d5ae5;
 }
 
 #mail-icon {
   position: absolute;
-  top: 148px;
+  top: 146px;
   left: 16px;
   width: 18px;
   height: 24px;
@@ -687,6 +717,12 @@ body {
   top: 216px;
   border-radius: 4px;
   resize: none;
+  outline: none;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#comment:focus-within {
+  border-color: #4d5ae5;
 }
 
 #checkbox-privacy {
@@ -710,7 +746,7 @@ body {
 .send-modal {
   position: absolute;
   top: 390px;
-  left: 119px;
+  left: 105px;
   width: 169px;
   height: 56px;
   border: none;
@@ -723,4 +759,8 @@ body {
   line-height: 24px;
   letter-spacing: 4%;
   border-radius: 4px;
+}
+
+.send-modal:hover {
+  background-color: #404bbf;
 }
