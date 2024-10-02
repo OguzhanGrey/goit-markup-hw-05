@@ -441,6 +441,26 @@ body {
   letter-spacing: 2%;
 }
 
+.icon1 {
+  border: 1px solid #8E8F99;
+  border-radius: 4px;
+}
+
+.icon-2 {
+  border: 1px solid #8E8F99;
+  border-radius: 4px;
+}
+
+.icon-3 {
+  border: 1px solid #8E8F99;
+  border-radius: 4px;
+}
+
+.icon-4 {
+  border: 1px solid #8E8F99;
+  border-radius: 4px;
+}
+
 .social-media {
   display: flex;
   list-style-type: none;
