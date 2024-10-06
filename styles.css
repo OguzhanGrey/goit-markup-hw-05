@@ -442,22 +442,22 @@ body {
 }
 
 .icon1 {
-  border: 1px solid #8E8F99;
+  border: 1px solid #8e8f99;
   border-radius: 4px;
 }
 
 .icon-2 {
-  border: 1px solid #8E8F99;
+  border: 1px solid #8e8f99;
   border-radius: 4px;
 }
 
 .icon-3 {
-  border: 1px solid #8E8F99;
+  border: 1px solid #8e8f99;
   border-radius: 4px;
 }
 
 .icon-4 {
-  border: 1px solid #8E8F99;
+  border: 1px solid #8e8f99;
   border-radius: 4px;
 }
 
@@ -607,7 +607,6 @@ body {
   justify-content: end;
 }
 
-
 .modal {
   background-color: #fcfcfc;
   padding: 24px 24px;
@@ -720,14 +719,14 @@ body {
   ---color4: none;
 }
 .open-close:hover {
-  --color2:#404BBF;
-  --color4:#FFFFFF;
-  --color3:none;
+  --color2: #404bbf;
+  --color4: #ffffff;
+  --color3: none;
 }
 .open-close:focus {
-  --color2:#404BBF;
-  --color4:#FFFFFF;
-  --color3:none;
+  --color2: #404bbf;
+  --color4: #ffffff;
+  --color3: none;
 }
 .close-icon {
   display: flex;
