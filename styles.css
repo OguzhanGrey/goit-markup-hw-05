@@ -607,177 +607,216 @@ body {
   justify-content: end;
 }
 
+
 .modal {
-  width: 438px;
-  height: 594px;
-  position: fixed;
-  margin-top: 60px;
-  margin-left: 584px;
-  border-radius: 4px;
-  box-shadow: 0px 1px 1px 0px #00000024, 0px 1px 3px 0px #0000001f,
-    0px 2px 1px 0px #00000033;
+  background-color: #fcfcfc;
+  padding: 24px 24px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  background-color: #fcfcfc;
-}
-
-#close {
-  position: absolute;
-  top: 24px;
-  right: 24px;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  --color3: none;
-}
-
-#close:hover {
-  --color2: #404bbf;
-  --color4: #ffffff;
+  gap: 24px;
+  border-radius: 4px;
+  position: relative;
+  box-shadow: 0px 1px 1px 0px #00000024, 0px 1px 3px 0px #0000001f,
+    0px 2px 1px 0px #00000033;
+  max-width: 408px;
 }
 
 .modal-title {
-  position: absolute;
-  top: 72px;
+  padding-left: 10px;
   font-family: Roboto;
   font-weight: 500;
   color: #2e2f42;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
   letter-spacing: 2%;
 }
-
-.modal-form {
-  position: absolute;
-  top: 120px;
+.svg-input {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 4px;
+  margin-bottom: 8px;
 }
-
+.input-icon {
+  position: absolute;
+  left: 16px;
+  transform: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.comment {
+  display: flex;
+  flex-direction: column;
+}
 .items {
-  font-family: Roboto;
-  font-size: 12px;
   font-weight: 400;
-  line-height: 14px;
+  font-size: 12px;
   letter-spacing: 4%;
+  line-height: 1.16;
   color: #8e8f99;
+  width: 360px;
 }
 #name {
-  padding-left: 40px;
-  width: 380px;
+  width: 360px;
   height: 40px;
-  border: 1px solid #2e2f4266;
+  padding-left: 38px;
   border-radius: 4px;
+  border: 1px solid #2e2f4266;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+#name:hover {
+  border: 1px solid #4d5ae5;
+}
+#name:focus {
+  border: 1px solid #4d5ae5;
   outline: none;
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-#name:focus-within {
-  border-color: #4d5ae5;
-}
-
-#person-icon {
-  position: absolute;
-  top: 31px;
-  left: 16px;
-  width: 18px;
-  height: 18px;
+#name:focus + .input-icon {
+  fill: #4d5ae5;
 }
 
 #tel {
-  padding-left: 40px;
-  width: 380px;
+  width: 360px;
   height: 40px;
-  border: 1px solid #2e2f4266;
+  padding-left: 38px;
   border-radius: 4px;
+  border: 1px solid #2e2f4266;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+#tel:hover {
+  border: 1px solid #4d5ae5;
+}
+#tel:focus {
+  border: 1px solid #4d5ae5;
   outline: none;
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-#tel:focus-within {
-  border-color: #4d5ae5;
-}
-
-#phone-icon {
-  position: absolute;
-  top: 86px;
-  left: 16px;
-  width: 18px;
-  height: 24px;
+#tel:focus + .input-icon {
+  fill: #4d5ae5;
 }
 
 #email {
-  padding-left: 40px;
-  width: 380px;
+  width: 100%;
   height: 40px;
+  padding-left: 38px;
+  border-radius: 4px;
   border: 1px solid #2e2f4266;
-  border-radius: 4px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+#email:hover {
+  border: 1px solid #4d5ae5;
+}
+#email:focus {
+  border: 1px solid #4d5ae5;
   outline: none;
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-#email:focus-within {
-  border-color: #4d5ae5;
+#email:focus + .input-icon {
+  fill: #4d5ae5;
 }
-
-#mail-icon {
+.open-close {
   position: absolute;
-  top: 146px;
-  left: 16px;
-  width: 18px;
-  height: 24px;
-}
+  cursor: pointer;
 
-#comment {
-  font-family: Roboto;
-  padding-top: 8px;
-  padding-left: 16px;
-  width: 380px;
-  height: 120px;
-  top: 216px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --color3: #e7e9fc;
+  --color5: #2e2f42;
+  ---color4: none;
+}
+.open-close:hover {
+  --color2:#404BBF;
+  --color4:#FFFFFF;
+  --color3:none;
+}
+.open-close:focus {
+  --color2:#404BBF;
+  --color4:#FFFFFF;
+  --color3:none;
+}
+.close-icon {
+  display: flex;
+  justify-content: end;
+  margin-bottom: 24px;
+}
+#modal-button {
   border-radius: 4px;
-  resize: none;
-  outline: none;
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-#comment:focus-within {
-  border-color: #4d5ae5;
-}
-
-#checkbox-privacy {
-  font-family: Roboto;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 14px;
-  letter-spacing: 4%;
-  color: #8e8f99;
-}
-
-#checkbox-privacy a {
-  font-family: Roboto;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 14px;
-  letter-spacing: 4%;
-  color: #4d5ae5;
-}
-
-.send-modal {
-  position: absolute;
-  top: 390px;
-  left: 105px;
-  width: 169px;
-  height: 56px;
   border: none;
+  box-shadow: 0px 4px 4px 0px #00000026;
   background-color: #4d5ae5;
   color: #ffffff;
-  font-family: Roboto;
+  padding: 16px 32px;
   font-size: 16px;
+  line-height: 1.5;
   font-weight: 500;
-  text-align: center;
-  line-height: 24px;
   letter-spacing: 4%;
-  border-radius: 4px;
+  text-align: center;
+  display: block;
+  gap: 10px;
+  width: 169px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin: 0 auto;
+}
+#modal-button:hover {
+  background-color: #404bbf;
+}
+#modal-button:focus {
+  background-color: #404bbf;
+}
+.send-button {
+  margin-top: 24px;
+}
+.check-div {
+  margin-top: 16px;
+}
+#checkbox {
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 4%;
+  line-height: 1.16;
+  color: #8e8f99;
+  cursor: pointer;
+  display: flex;
+}
+#checkbox input[type="checkbox"] {
+  margin-right: 8px;
+}
+.privacy {
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 4%;
+  line-height: 1.3;
+  margin-left: 4px;
 }
 
-.send-modal:hover {
-  background-color: #404bbf;
+.generally {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  position: fixed;
+  top: 0;
+  background-color: #2e2f4266;
+}
+#textarea {
+  max-width: 360px;
+  height: 120px;
+  border: 1px solid #2e2f4266;
+  border-radius: 4px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
+  padding-top: 8px;
+  padding-left: 16px;
+  margin-top: 4px;
+  resize: none;
+}
+#textarea:hover {
+  border: 1px solid #4d5ae5;
+}
+#textarea:focus {
+  border: 1px solid #4d5ae5;
+}
+#textarea::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 4%;
+  line-height: 1.16;
+  color: #75757580;
 }
